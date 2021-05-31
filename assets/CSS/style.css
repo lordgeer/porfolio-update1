@@ -1,0 +1,60 @@
+:root {
+  --grey: rgb(190, 188, 188);
+  --black: rgb(0, 0, 0);
+}
+content {
+  background: url('/assets/images/dromond_kass.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.subheader {
+    padding: 4%;
+    text-align: right;
+    width: 100%;
+    background-image: url("../images/dromond_kass.jpg");
+  }
+
+.navbarNav {
+  text-align: right;
+
+}
+
+.picture {
+  padding: 0 0 0 0;
+  margin-right: 10%;
+  height: auto;
+  width: 10%;
+  object-fit: contain;
+  align-self: flex-start;
+  margin: 0 15px 5px 0px;
+  }
+.about-container {
+    display: flex;
+}
+
+.about-text {
+    flex: 1 1 auto;
+}
+
+.main-content-box {
+    flex: 1;
+    margin: auto;
+    background-color: var(--grey);
+    margin-bottom: 7px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--black);
+}
+
+@media screen and (max-width: 992px) {
+  .main-content img {
+      max-width: 95%;
+  }
+  .main-content-contact {
+    float: left;
+  }
+}
