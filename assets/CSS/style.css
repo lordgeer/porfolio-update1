@@ -1,9 +1,14 @@
 :root {
   --grey: rgb(190, 188, 188);
   --black: rgb(0, 0, 0);
+  --dark: #13293d;
+  --light: #fff;
+  --navlink-color: #d4dfcade;
+  --hover: rgb(226, 57, 45);
+  --border: rgba(219, 175, 175, 0.247);
 }
-content {
-  background: url('/assets/images/dromond_kass.jpg') no-repeat center center fixed;
+body {
+  background: url('/assets/images/korriban.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -11,14 +16,15 @@ content {
 }
 
 .subheader {
-    padding: 4%;
-    text-align: right;
     width: 100%;
     background-image: url("../images/dromond_kass.jpg");
+    height: 70px;
+    background-size: cover;
+    background-position: center;
   }
 
 .navbarNav {
-  text-align: right;
+  justify-content: flex-end;
 
 }
 
@@ -48,6 +54,24 @@ content {
     width: 80%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--black);
+    opacity:0.8;
+}
+
+.work-content-box {
+  flex: 1;
+    margin: auto;
+    background-color: var(--grey);
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--black);
+    opacity:0.8;
+}
+
+.mash {
+  height: 64px;
+  width: 64px;
 }
 
 @media screen and (max-width: 992px) {
